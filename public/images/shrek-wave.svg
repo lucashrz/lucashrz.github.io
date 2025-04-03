@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <!-- Corpo do Shrek -->
+    <circle cx="100" cy="100" r="50" fill="#8bc34a"/>
+    <!-- Cabeça -->
+    <circle cx="100" cy="70" r="35" fill="#8bc34a"/>
+    <!-- Orelhas -->
+    <path d="M70 60 Q65 40 80 50" fill="#8bc34a" stroke="#689f38" stroke-width="2"/>
+    <path d="M130 60 Q135 40 120 50" fill="#8bc34a" stroke="#689f38" stroke-width="2"/>
+    <!-- Olhos -->
+    <circle cx="85" cy="65" r="8" fill="white"/>
+    <circle cx="115" cy="65" r="8" fill="white"/>
+    <circle cx="85" cy="65" r="4" fill="black"/>
+    <circle cx="115" cy="65" r="4" fill="black"/>
+    <!-- Sorriso -->
+    <path d="M80 80 Q100 95 120 80" fill="none" stroke="#5d4037" stroke-width="3"/>
+    <!-- Mão acenando -->
+    <path d="M140 100 Q160 80 170 100 Q180 120 160 130" fill="#8bc34a" stroke="#689f38" stroke-width="2">
+        <animateTransform
+            attributeName="transform"
+            type="rotate"
+            from="0 160 115"
+            to="20 160 115"
+            dur="1s"
+            repeatCount="indefinite"
+            additive="sum"
+            direction="alternate"/>
+    </path>
+</svg> 

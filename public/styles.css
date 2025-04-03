@@ -1,0 +1,288 @@
+:root {
+    --shrek-green: #8bc34a;
+    --shrek-dark-green: #689f38;
+    --swamp-brown: #5d4037;
+    --text-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: url('images/Fundo.png') no-repeat center center fixed;
+    background-size: cover;
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.header {
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(104, 159, 56, 0.9);
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('images/swamp-pattern.png') repeat;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.header h1 {
+    font-size: 3rem;
+    color: var(--text-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 1rem;
+}
+
+.pedro-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 8px solid var(--text-color);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    margin: 2rem auto;
+    display: block;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.pedro-photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.invitation-text {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    padding: 2rem;
+    background-color: var(--swamp-brown);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.detail-card {
+    background-color: rgba(104, 159, 56, 0.9);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.detail-card:hover {
+    transform: translateY(-5px);
+}
+
+.detail-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.detail-card p {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin: 0.5rem 0;
+}
+
+.decorations {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 0;
+}
+
+.shrek-decoration,
+.donkey-decoration,
+.fiona-decoration {
+    width: 150px;
+    opacity: 0.8;
+    transition: transform 0.3s ease;
+    animation: float 3s ease-in-out infinite;
+}
+
+.donkey-decoration {
+    width: 120px;
+    bottom: 40px;
+    right: 180px;
+    animation-delay: 1s;
+}
+
+.fiona-decoration {
+    width: 140px;
+    bottom: 60px;
+    right: 340px;
+    animation-delay: 2s;
+}
+
+.shrek-decoration:hover,
+.donkey-decoration:hover,
+.fiona-decoration:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.special-notes {
+    background-color: rgba(93, 64, 55, 0.9);
+    padding: 2rem;
+    border-radius: 15px;
+    margin: 2rem 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.special-notes h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.special-notes ul {
+    list-style: none;
+}
+
+.special-notes li {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    font-size: 1.2rem;
+}
+
+.special-notes li::before {
+    content: '🌟';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.rsvp-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: var(--swamp-brown);
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.rsvp-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    background-color: #4a332c;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .invitation-text {
+        font-size: 1.2rem;
+    }
+
+    .pedro-photo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .decorations {
+        display: none;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    .detail-card {
+        padding: 1.5rem;
+    }
+
+    .special-notes {
+        padding: 1.5rem;
+    }
+
+    .special-notes h3 {
+        font-size: 1.5rem;
+    }
+
+    .special-notes li {
+        font-size: 1rem;
+    }
+}
+
+/* Animações de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.header,
+.pedro-photo,
+.invitation-text,
+.detail-card,
+.special-notes {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.detail-card:nth-child(1) { animation-delay: 0.2s; }
+.detail-card:nth-child(2) { animation-delay: 0.4s; }
+.detail-card:nth-child(3) { animation-delay: 0.6s; }
+.special-notes { animation-delay: 0.8s; } 

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <!-- Vestido -->
+    <path d="M70 100 Q100 180 130 100" fill="#4caf50"/>
+    <!-- Corpo -->
+    <circle cx="100" cy="100" r="30" fill="#8bc34a"/>
+    <!-- Cabeça -->
+    <circle cx="100" cy="70" r="25" fill="#8bc34a"/>
+    <!-- Cabelo -->
+    <path d="M75 70 Q100 30 125 70" fill="#ff5722"/>
+    <!-- Coroa -->
+    <path d="M80 45 L90 35 L100 45 L110 35 L120 45" fill="none" stroke="gold" stroke-width="2"/>
+    <!-- Olhos -->
+    <circle cx="90" cy="65" r="5" fill="white"/>
+    <circle cx="110" cy="65" r="5" fill="white"/>
+    <circle cx="90" cy="65" r="2" fill="black"/>
+    <circle cx="110" cy="65" r="2" fill="black"/>
+    <!-- Sorriso -->
+    <path d="M85 80 Q100 90 115 80" fill="none" stroke="#5d4037" stroke-width="2"/>
+    <!-- Animação de giro suave -->
+    <animateTransform
+        attributeName="transform"
+        type="rotate"
+        from="-5 100 100"
+        to="5 100 100"
+        dur="2s"
+        repeatCount="indefinite"
+        additive="sum"
+        direction="alternate"/>
+</svg> 

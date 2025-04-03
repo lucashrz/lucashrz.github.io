@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniversário do Pedro - Tema Shrek</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="public/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Festa de Aniversário do Pedro</h1>
+            <p>Tema: Shrek - Uma Aventura no Puteiro</p>
+        </header>
+
+        <img src="public/images/Flinigan_Fleck.png" alt="Pedro" class="pedro-photo">
+
+        <div class="invitation-text">
+            <p>Ei, você aí! Está convidado para a festa mais animada do pântano!</p>
+            <p>Venha celebrar o aniversário do Pedro em uma aventura incrível com Shrek e seus amigos!</p>
+            <p>🌟 Traga sua alegria e disposição para se divertir! 🌟</p>
+        </div>
+
+        <div class="details">
+            <div class="detail-card">
+                <h3>📅 Data e Hora</h3>
+                <p>Sexta, 12 de Abril</p>
+                <p>A partir das 19h</p>
+            </div>
+
+            <div class="detail-card">
+                <h3>📍 Local</h3>
+                <p>Bella Jaú</p>
+                <p>Tão Tão Distante</p>
+            </div>
+
+            <div class="detail-card">
+                <h3>🎉 Atrações</h3>
+                <p> Skol Beats</p>
+                <p> Xeque Mate</p>
+            </div>
+        </div>
+
+        <div class="special-notes">
+            <h3>✨ Informações Especiais ✨</h3>
+            <ul>
+                <li>⛔ Proibido: Veganos</li>
+                <li>🍷 Drogas e álcool: Liberados</li>
+            </ul>
+        </div>
+
+        <div style="text-align: center;">
+            <a href="tel:+5511949369553" class="rsvp-button">
+                Confirmar Presença
+            </a>
+        </div>
+    </div>
+
+    <div class="decorations">
+        <img src="public/images/shrek-wave.svg" alt="Shrek" class="shrek-decoration">
+        <img src="public/images/donkey.svg" alt="Burro" class="donkey-decoration">
+        <img src="public/images/fiona.svg" alt="Fiona" class="fiona-decoration">
+    </div>
+
+    <script>
+        // Adiciona um pouco de interatividade
+        document.querySelector('.pedro-photo').addEventListener('click', function() {
+            this.style.transform = 'scale(1.1) rotate(360deg)';
+            setTimeout(() => {
+                this.style.transform = 'scale(1) rotate(0deg)';
+            }, 1000);
+        });
+    </script>
+</body>
+</html> 
